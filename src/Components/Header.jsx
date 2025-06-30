@@ -37,7 +37,10 @@ const Header = ({setTab , currentTab, Userdata}) => {
   return (
     <header className="sticky  bg-bg-color px-4 sm:px-8 py-6 flex items-center justify-between border-b-[1px] border-opacity-50 border-white z-50">
       {/* Logo */}
-      <Logo />
+      <a href= "#dashboard" onClick={()=> setTab('dashboard')}>
+        <Logo />
+      </a>
+      
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex flex-row space-x-6 lg:space-x-10 text-white font-semibold text-lg lg:text-2xl">
