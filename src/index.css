@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-color: #122117;
+    --main-color: #264533;
+    --support-color: #38E07A;
+    --border-color: 
+  
+}
+
+body {
+  background-color: #122117;
+}
+
+html {
+  scroll-behavior: smooth;
+}
