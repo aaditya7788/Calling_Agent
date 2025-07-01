@@ -90,15 +90,37 @@ const Header = ({setTab , currentTab, Userdata}) => {
       </div>
 
       {/* Mobile Navigation Menu */}
-      {menuOpen && (
-        <nav className="absolute top-[100%] left-1/2 transform -translate-x-1/2 mt-2 bg-main-color border-2 border-white w-[90vw] rounded-2xl p-6 flex flex-col space-y-4 items-center md:hidden z-40 shadow-lg ">
-          {
-            data.map((item)=>(
-            <a href={item.id} className="text-white hover:text-gray-400" onClick={() => setMenuOpen(false) && setTab(item.setTab)}>{item.label}</a>
-            ))
-          }
-        </nav>
-      )}
+      {/* Mobile Navigation Menu */}
+{menuOpen && (
+  <nav className="absolute top-[100%] left-1/2 transform -translate-x-1/2 mt-2 bg-main-color border-2 border-white w-[90vw] rounded-2xl p-6 flex flex-col space-y-4 items-center md:hidden z-40 shadow-lg">
+    {/* Hey, Name */}
+    <p className="text-white font-semibold">Hey! <span className='text-green-400'>{Userdata?.name || "User Name"}</span></p>
+    {/* Navigation Links */}
+     {data.map((item) => (
+      <a
+        href={item.id}
+        className="text-white hover:text-gray-400"
+        onClick={() => setMenuOpen(false) || setTab(item.setTab)}
+      >
+        {item.label}
+      </a>
+    ))}
+
+    {/* Profile Section */}
+    <div className="flex flex-col items-center mt-4 space-y-2">
+
+      
+      {/* Logout Button */}
+      <button
+        className="mt-2 w-full bg-red-500 text-white py-2 px-2 rounded-lg flex items-center justify-center space-x-2 hover:bg-red-600"
+        onClick={() => handleLogout()} // Replace with logout logic
+      >
+        <LogOut size={20} className="text-white" />
+        <span>Logout</span>
+      </button>
+    </div>
+  </nav>
+)}
     </header>
   );
 };

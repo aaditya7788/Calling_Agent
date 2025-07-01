@@ -67,6 +67,11 @@ Thank you for your patience and continued support when it feels like you are don
       id="Call"
       className="min-h-screen px-4 sm:px-6 md:px-12 lg:px-[10vw] py-8 overflow-auto overflow-x-hidden"
     >
+
+      <marquee direction="left" loop="" className=" text-white font-semibold py-2 px-4 rounded-lg mb-6 sm:text-sm text-xs">
+          Due to Free Tier limitations, the call will schedule only registed(twilio) phone numbers.
+        </marquee>
+        
       <div className="max-w-2xl mx-auto text-white relative">
         {/* Top-right Try Button */}
         <button
@@ -75,6 +80,7 @@ Thank you for your patience and continued support when it feels like you are don
         >
           Try
         </button>
+
 
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-semibold mb-10">
           Call with AI Assistant
