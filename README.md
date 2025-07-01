@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/aaditya7788/Calling_Agent/906796b5e7193a34e347a37745409f5732b06fc5/src/assets/react.svg" alt="Calling Agent Logo" width="100" height="100" />
+  <img src="https://raw.githubusercontent.com/aaditya7788/Calling_Agent/906796b5e7193a34e347a37745409f5732b06fc5/src/assets/vite.svg" alt="Calling Agent Logo" width="100" height="100" />
 </p>
 
 <h1 align="center">📞 Calling Agent</h1>
