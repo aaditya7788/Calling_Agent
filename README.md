@@ -69,20 +69,21 @@
 ```bash
 git clone https://github.com/aaditya7788/Calling_Agent.git
 cd Calling_Agent
-
+```
 2. Install Dependencies
-
+```bash
 npm install
+```
 
 3. Add .env File (Optional if keys are public in the code)
-
+```bash
 # Example .env (Vite config format)
 VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
-
+```
 4. Run the App Locally
-
+```bash
 npm run dev
-
+```
 
 ---
 
